@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="jp.ac.kobe_u.tv">
+    package="jp.ac.kobe_u.light">
 
     <!-- INTERNETは通信が発生するので必要 -->
     <uses-permission android:name="android.permission.INTERNET"/>

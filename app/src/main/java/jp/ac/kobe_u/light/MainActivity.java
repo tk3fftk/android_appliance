@@ -1,4 +1,4 @@
-package jp.ac.kobe_u.tv;
+package jp.ac.kobe_u.light;
 
 import android.os.Build;
 import android.os.Bundle;
@@ -13,14 +13,14 @@ import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
-    private final static String URL = "http://192.168.3.102:8080/IRKitService/api/send/tv_pow";
+    private final static String URL = "http://192.168.3.102:8080/IRKitService/api/send/light_on";
     TextToSpeech tts;
-    String toSpeech = "テレビを点けます";
+    String toSpeech = "明かりを点けます";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(jp.ac.kobe_u.light.R.layout.activity_main);
 
         // set Text to speech
         tts = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
